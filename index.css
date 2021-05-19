@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --main-grey: #adadad;
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color:rgb(176, 203, 236);
+}
+*, *::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+
+}
+
+nav{
+    background-color: rgb(38, 63, 95);
+    position: fixed;
+    width: 100vw;
+    display: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    z-index: 100;
+
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0 50px;
+}
+@media (max-width:600px){
+   nav ul{
+        justify-content:center;
+   }
+}
+nav li{
+    list-style-type: none;
+}
+nav a{
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    margin-left: 20px;
+    
+}
+nav a::after{
+    content:'';
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+   transform: translateY(10px);
+   transition: transform 0.3s ease;
+   height: 100%;
+   width: 100%;
+   opacity: 0;
+
+}
+nav a:hover::after{
+   transform: translateY(0);
+      opacity: 1;
+
+}
+header{
+    background-image: url("https://www.ilxgroup.com/blog/wp-content/uploads/2020/01/How-to-become-a-computer-programmer-200127.jpg");
+    background-position: center center;
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+header::after{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    right: 0;
+    bottom:0;
+    left: 0;
+    opacity: 0.5;
+}
+*header{
+    position: relative;
+    z-index: 1;
+
+}
+header h1{
+    font-size: 4rem;
+    margin-bottom: 15px;
+    color: #fff;
+    padding-left: 25px;
+}
+p{
+    color:#fff;
+    font-size: 1.3rem;
+    margin:0;
+    font-weight: bold;
+}
+cite{
+font-size: 3rem;
+}
+
+.projects{
+    display:grid;
+    /* margin: 30px 0; */
+    /* grid-template-columns: 250px 250px 250px; */
+    /* grid-gap: 20px; */
+    /* height: 100vh; */
+    grid-template-columns: 280px 280px 280px;
+    grid-auto-rows: repeat(auto-fit,(250px,1fr));
+    grid-gap: 2rem;
+    width: 100%;
+    max-width: 1280px;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+@media (max-width: 600px){
+    .projects{
+        grid-template-columns: 1fr;
+        /* grid-template-columns: 400px; */
+        /* justify-content: center; */
+        margin: 10px auto;
+       
+    }
+    .project{
+        margin: 20px auto;
+    }
+
+}
+h2{
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1.6rem;
+}
+
+.projects p{
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.project{
+      box-shadow: 1px 1px 2px rgba(42, 18, 49, 0.5);
+}
+.projects a{
+    text-decoration: none;
+}
+
+.show-all a {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    width: 150px;
+    height: 35px;
+    background-color: rgb(91, 130, 179);
+    padding: 5px;
+    color: #fff;
+    font-weight:bold;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    align-items: center;
+    text-decoration: none;
+}
+.show-all:hover{
+    transform: scale(1.1);
+    transition: transform 0.3 ease;
+}
+.projects img{
+    height: 280px;
+    width: 280px; 
+    box-shadow: 1px 1px 2px rgba(42, 18, 49, 0.5);
+    transition: transform 0.3s ease;
+    /* object-fit: cover; */
+}
+.projects :hover{
+    transform: scale(1.05);
+}
+.code{
+    color:rgb(176, 203, 236);
+}
+.code:hover{
+    color: rgb(36, 73, 119) ;
+    font-size: 1.1rem;
+    transform: scale(2);
+    /* transform: scale(1.05); */
+
+}
+.social{
+    background-color:rgb(36, 73, 119);
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+
+}
+.social p{
+    font-size: 0.8rem;
+        color: #fff;
+        font-weight:normal;
+}
+.social ul{
+    display: flex;
+    justify-content: center;
+}
+.social li{
+    list-style-type: none;
+}
+.social a{
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    font-size: 1.5rem;
+    color: rgba(248, 246, 246, 0.966);
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+}
+footer{
+        background-color:rgb(104, 99, 153);
+        padding: 15px;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+}
+span{
+    color: red;
+}
+
