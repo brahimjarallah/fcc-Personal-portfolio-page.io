@@ -1,0 +1,17 @@
+{
+  "name": "fcc-build-a-personal-portfolio-webpage-GRID_FLEX",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "home":"",
+    
+    "gh-pages": "^3.1.0"
+  }
+}
