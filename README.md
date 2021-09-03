@@ -1,4 +1,4 @@
 # fcc-Personal-portfolio-page.io
 
 checkout the link bellow => :
-https://brahimjarallah.github.io/fcc-Personal-portfolio-page.io/
+#https://gifted-mirzakhani-d45597.netlify.app/#social
